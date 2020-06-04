@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "databaseName": "stocksChanged",
+      "collectionName": "stocks",
+      "createLeaseCollectionIfNotExists": "true"
+    }
+  ]
+}
